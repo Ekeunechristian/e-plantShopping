@@ -74,7 +74,7 @@ function CartItem({ onContinueShopping }) {
                 <h3>Total Cost: ${calculateTotalAmount()}</h3>
             </div>
             <div className="continue_shopping_btn">
-            <button className="get-started-button" onClick={(e) => handleContinueShopping(e)}>Continue Shopping</button>
+            <button className="get-started-button" onClick={onContinueShopping}>Continue Shopping</button>
             <br />
             <button className="get-started-button1">Checkout</button>
           </div>
