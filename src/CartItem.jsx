@@ -47,7 +47,6 @@ function CartItem({ onContinueShopping }) {
     return (
         <div className="cart-container">
             <h2>Your Cart</h2>
-            <button className="continue-shopping" onClick={onContinueShopping}>Continue Shopping</button>
             <div className="cart-items">
                 {cartItems.length === 0 ? (
                     <p>Your cart is empty.</p>
@@ -74,6 +73,11 @@ function CartItem({ onContinueShopping }) {
             <div className="cart-total">
                 <h3>Total Cost: ${calculateTotalAmount()}</h3>
             </div>
+            <div className="continue_shopping_btn">
+            <button className="get-started-button" onClick={(e) => handleContinueShopping(e)}>Continue Shopping</button>
+            <br />
+            <button className="get-started-button1">Checkout</button>
+          </div>
         </div>
     );
 }
